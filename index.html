@@ -55,8 +55,6 @@
         <div class="text-center mb-8" data-aos="zoom-in" data-aos-duration="1000">
             <!-- Profile Picture -->
             <div class="relative inline-block">
-                
-                <!-- Added object-top here to keep his face in the circle -->
                 <img src="chandru1.jpg" alt="Chandru" class="w-40 h-40 rounded-full mx-auto object-cover object-top border-4 border-red-500 neon-red mb-4 transition-transform hover:scale-105 duration-300">
                 
                 <!-- Pisces Zodiac Badge -->
@@ -126,13 +124,18 @@
                 <div class="h-px bg-red-500/50 flex-1"></div>
             </div>
             
-            <!-- Dynamic Grid Layout with object-top added to all images -->
+            <!-- Dynamic Grid Layout (Fixed Image Positioning) -->
             <div class="grid grid-cols-2 gap-3">
+                <!-- Top row keeps object-top -->
                 <img src="chandru2.JPG" alt="Gallery 1" class="w-full h-48 object-cover object-top rounded-2xl border border-gray-700 hover:border-red-500 transition-all duration-300">
                 <img src="chandru3.JPG" alt="Gallery 2" class="w-full h-48 object-cover object-top rounded-2xl border border-gray-700 hover:border-red-500 transition-all duration-300">
-                <img src="chandru4.JPG" alt="Gallery 3" class="w-full h-56 object-cover object-top rounded-2xl border border-gray-700 hover:border-red-500 transition-all duration-300 col-span-2">
-                <img src="chandru5.JPG" alt="Gallery 4" class="w-full h-48 object-cover object-top rounded-2xl border border-gray-700 hover:border-red-500 transition-all duration-300">
-                <img src="chandru6.JPG" alt="Gallery 5" class="w-full h-48 object-cover object-top rounded-2xl border border-gray-700 hover:border-red-500 transition-all duration-300">
+                
+                <!-- Middle large image changed to object-center so his face is visible -->
+                <img src="chandru4.JPG" alt="Gallery 3" class="w-full h-56 object-cover object-center rounded-2xl border border-gray-700 hover:border-red-500 transition-all duration-300 col-span-2">
+                
+                <!-- Bottom row changed to object-center -->
+                <img src="chandru5.JPG" alt="Gallery 4" class="w-full h-48 object-cover object-center rounded-2xl border border-gray-700 hover:border-red-500 transition-all duration-300">
+                <img src="chandru6.JPG" alt="Gallery 5" class="w-full h-48 object-cover object-center rounded-2xl border border-gray-700 hover:border-red-500 transition-all duration-300">
             </div>
         </div>
 
